@@ -1,0 +1,11 @@
+import HeroPage from "@/components/home/HeroPage";
+import AboutMe from "@/components/home/AboutMe";
+
+export default function Home() {
+  return (
+    <div>
+      <HeroPage />
+      <AboutMe />
+    </div>
+  );
+}
