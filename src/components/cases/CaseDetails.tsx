@@ -10,8 +10,14 @@ export default function CaseDetails({
   project,
 }: CaseDetailsProps) {
   return (
-    <main>
-      <Link href="/cases">← Back to cases</Link>
+    <main className="mx-auto max-w-6xl px-6 py-6 md:px-12">
+      <Link
+        href="/experience"
+        className="inline-flex items-center gap-2 text-sm text-black transition-[font-size,color] duration-300 ease-in-out hover:text-xl"
+      >
+        <Image src="/icons/Property 1=LEFT-UP.svg" alt="arrow" width={20} height={20}/>
+        Back to experience
+      </Link>
 
       <header>
         <p>{project.category}</p>
