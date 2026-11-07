@@ -1,4 +1,3 @@
-
 export type DesignImage = {
   src: string;
   alt: string;
@@ -24,11 +23,13 @@ export type DesignCase = {
   colorPalette: {
     name: string;
     description: string;
+    image: DesignImage;
   };
 
   typography: {
     name: string;
     description: string;
+    image: DesignImage;
   };
 
   images:
@@ -38,43 +39,55 @@ export type DesignCase = {
 
 export const cases: DesignCase[] = [
   {
-    slug: "brand-identity",
-    title: "Brand Identity",
+    slug: "email-marketing",
+    title: "Email Marketing Design",
     category: "Branding",
-    description: "A visual identity for a new brand.",
-    cover: "/images/cat.jpg",
+    description: "Email communication system for educational program on development platform 1C: Enterprise",
+    cover: "/images/ecover.webp",
 
     goal: {
       name: "Build brand recognition",
-      description: "Create a consistent visual identity that communicates the brand's values."
+      description: "Create a single letter system that accompanies the teacher at different stages of interaction with the educational program: from the first acquaintance to the beginning of the course."
     },
 
     users: {
       name: "Young professionals",
-      description: "People looking for modern, recognizable and trustworthy brands."
+      description: "The target audience includes educators who are new to 1C:Enterprise development, as well as experienced teachers looking to enhance their skills and update their knowledge. They aim to gain structured, practical training that will help them confidently teach 1C development to their students."
     },
 
     colorPalette: {
       name: "Modern & Minimal",
-      description: "Neutral tones combined with accent colors to create a clean visual identity."
+      description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
+      image: {
+        src: "/images/email-c1.png",
+        alt: "Brand color palette"
+      }
     },
 
     typography: {
-      name: "Inter",
-      description: "A modern sans-serif typeface that provides readability and a minimal visual style."
+      name: "Golos Text",
+      description: "It is a modern sans-serif typeface with clean geometric forms and balanced proportions, combining excellent readability with a confident, contemporary, and technological feel.",
+      image: {
+        src: "/images/email-tp.png",
+        alt: "Brand typodraphy"
+      }
     },
 
     images: [
       {
-        src: "/images/brand-1.jpg",
+        src: "/images/email-phone-mockup.webp",
         alt: "Brand identity overview"
       },
       {
-        src: "/images/brand-2.jpg",
-        alt: "Brand color palette"
+        src: "/images/email-laptop-mockup.webp",
+        alt: "Brand identity overview"
       },
       {
-        src: "/images/brand-3.jpg",
+        src: "/images/email-tablet-mockup.webp",
+        alt: "Brand applications"
+      },
+      {
+        src: "/images/email-ph2-mockup.webp",
         alt: "Brand applications"
       }
     ]
@@ -85,7 +98,7 @@ export const cases: DesignCase[] = [
     title: "Social Media Design",
     category: "Digital Design",
     description: "Visual content for social media.",
-    cover: "/images/smoke.jpg",
+    cover: "/images/cool.jpg",
 
     goal: {
       name: "Increase audience engagement",
@@ -99,12 +112,20 @@ export const cases: DesignCase[] = [
 
     colorPalette: {
       name: "Bold & Expressive",
-      description: "Bright accent colors combined with darker backgrounds to create contrast."
+      description: "Bright accent colors combined with darker backgrounds to create contrast.",
+      image: {
+        src: "/images/email-cp.png",
+        alt: "Brand color palette"
+      }
     },
 
     typography: {
       name: "Manrope",
-      description: "A geometric sans-serif typeface with a contemporary appearance."
+      description: "A geometric sans-serif typeface with a contemporary appearance.",
+      image: {
+        src: "/images/email-tp.png",
+        alt: "Brand typodraphy"
+      }
     },
 
     images: [
@@ -142,12 +163,20 @@ export const cases: DesignCase[] = [
 
     colorPalette: {
       name: "Dynamic & Contrast",
-      description: "Expressive colors and contrasting shades that attract attention."
+      description: "Expressive colors and contrasting shades that attract attention.",
+      image: {
+        src: "/images/email-cp.png",
+        alt: "Brand color palette"
+      }
     },
 
     typography: {
       name: "Montserrat",
-      description: "A geometric sans-serif typeface with distinctive headlines."
+      description: "A geometric sans-serif typeface with distinctive headlines.",
+      image: {
+        src: "/images/email-tp.png",
+        alt: "Brand typodraphy"
+      }
     },
 
     images: [

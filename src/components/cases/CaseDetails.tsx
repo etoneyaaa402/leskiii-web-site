@@ -23,12 +23,12 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
         Back to cases
       </Link>
 
-      <header className="mt-16 mb-10">
-        <p className="mb-4 text-sm text-neutral-500">
+      <header className="md:mt-10 md:mb-10 mt-8 mb-6">
+        <p className="mb-6 text-sm text-neutral-500">
           {project.category}
         </p>
 
-        <h1 className="mb-6 text-4xl font-medium tracking-tight md:text-6xl">
+        <h1 className="mb-2 text-4xl font-medium tracking-tight md:text-6xl">
           {project.title}
         </h1>
 
@@ -37,7 +37,7 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
         </p>
       </header>
 
-      <div className="mb-20 overflow-hidden rounded-xl">
+      <div className="mb-20 overflow-hidden rounded-b-xl">
         <Image
           src={project.cover}
           alt={`${project.title} cover`}
@@ -49,17 +49,17 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
       </div>
 
       <section className="mb-24">
-        <h2 className="mb-10 text-3xl font-medium md:text-4xl">
+        <h2 className="md:mb-10 mb-8 text-3xl font-medium md:text-4xl">
           About the project
         </h2>
 
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:gap-12 gap-10 md:grid-cols-2">
           <div>
-            <p className="mb-4 text-sm text-neutral-500">
+            <p className="md:mb-6 mb-4 text-sm text-neutral-500">
               Main goal
             </p>
 
-            <h3 className="mb-4 text-2xl font-medium">
+            <h3 className="mb-2 text-2xl font-medium">
               {project.goal.name}
             </h3>
 
@@ -68,11 +68,11 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
             </p>
           </div>
           <div>
-            <p className="mb-4 text-sm text-neutral-500">
+            <p className="md:mb-6 mb-4 text-sm text-neutral-500">
               Target audience
             </p>
 
-            <h3 className="mb-4 text-2xl font-medium">
+            <h3 className="mb-2 text-2xl font-medium">
               {project.users.name}
             </h3>
 
@@ -85,52 +85,68 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
       </section>
 
       <section className="mb-24">
-        <h2 className="mb-10 text-3xl font-medium md:text-4xl">
+        <h2 className="md:mb-10 mb-8 text-3xl font-medium md:text-4xl">
           Visual direction
         </h2>
 
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-          <div>
-            <p className="mb-4 text-sm text-neutral-500">
+        <div className="grid grid-cols-1 md:gap-12 gap-10 md:grid-cols-2">
+          <div className="overflow-hidden rounded-b-xl">
+            <p className="md:mb-6 mb-4 text-sm text-neutral-500">
               Color palette
             </p>
 
-            <h3 className="mb-4 text-2xl font-medium">
+            <h3 className="mb-2 text-2xl font-medium">
               {project.colorPalette.name}
             </h3>
 
             <p className="leading-relaxed text-neutral-600">
               {project.colorPalette.description}
             </p>
+            <Image src={project.colorPalette.image.src} alt={project.colorPalette.image.alt}
+              width={1600}
+              height={1200}
+              className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02]"/>
           </div>
 
-          <div>
-            <p className="mb-4 text-sm text-neutral-500">
+          <div className="overflow-hidden rounded-b-xl">
+            <p className="md:mb-6 mb-4 text-sm text-neutral-500">
               Typography
             </p>
 
-            <h3 className="mb-4 text-2xl font-medium">
+            <h3 className="mb-2 text-2xl font-medium">
               {project.typography.name}
             </h3>
 
             <p className="leading-relaxed text-neutral-600">
               {project.typography.description}
             </p>
+            <Image src={project.typography.image.src} alt={project.typography.image.alt}
+              width={1600}
+              height={1200}
+              className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02]"/>
           </div>
 
         </div>
       </section>
 
-      <section className="mb-20">
+      <section className="md:mb-20 mb-10">
         <h2 className="mb-10 text-3xl font-medium md:text-4xl">
           Final designs
         </h2>
-
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      
+        <div className="
+          flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide
+          pb-4 
+          md:grid md:grid-cols-2 md:gap-6 md:overflow-visible
+        ">
           {project.images.map((image, index) => (
             <figure
               key={image.src}
-              className="overflow-hidden rounded-xl"
+              className="
+                w-[85%] shrink-0 snap-center
+                overflow-hidden rounded-xl
+                md:w-full
+              "
             >
               <Image
                 src={image.src}
@@ -139,7 +155,7 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
                 height={1200}
                 className="h-auto w-full transition-transform duration-500 hover:scale-[1.02]"
               />
-
+      
               <figcaption className="mt-3 text-sm text-neutral-500">
                 {String(index + 1).padStart(2, "0")}
               </figcaption>
