@@ -20,19 +20,18 @@ export default function CopyableText({
     try {
       await navigator.clipboard.writeText(value);
       setCopied(true);
-  
+
       setTimeout(() => {
         setCopied(false);
         setShowCopy(false);
-      }, 1000);
-  
+      }, 1500);
     } catch (error) {
-      console.error("failed to copy text", error);
+      console.error("Failed to copy text:", error);
     }
   };
 
   return (
-    <span className="group relative inline-flex items-center gap-3">
+    <span className="group inline-flex items-center gap-2">
       <a
         href={href}
         onClick={(e) => {
@@ -49,13 +48,25 @@ export default function CopyableText({
         type="button"
         onClick={handleCopy}
         className={`
-          absolute right-full top-1/2 -translate-y-1/2 mr-2
-          whitespace-nowrap p-2 text-sm
-          hover:underline hover:text-blue-500
-          transition-opacity duration-300 ease-in-out
-          ${showCopy ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
-          md:opacity-0 md:pointer-events-none
-          md:group-hover:opacity-100 md:group-hover:pointer-events-auto
+          text-sm whitespace-nowrap transition-all duration-300
+        
+          ${
+            showCopy
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          }
+        
+          md:group-hover:opacity-100
+          md:group-hover:pointer-events-auto
+          md:focus-visible:opacity-100
+          md:focus-visible:pointer-events-auto
+        
+          max-md:rounded-full
+          max-md:bg-gray-100
+          max-md:px-3
+          max-md:py-1.5
+          max-md:text-gray-500
+          max-md:active:bg-gray-200
         `}
       >
         {copied ? "Copied!" : "Copy"}
