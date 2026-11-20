@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavMenu from "@/components/NavMenu";
@@ -27,7 +28,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <NavMenu />
+        <Suspense fallback={<div className="h-16" />}>
+          <NavMenu />
+        </Suspense>
         {children}
         <ToTop />
         <Footer />

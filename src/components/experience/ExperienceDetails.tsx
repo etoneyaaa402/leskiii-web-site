@@ -15,10 +15,16 @@ export default function ExperienceDetails({
     <main className="mx-auto max-w-6xl px-6 py-6 md:px-12">
       <Link
         href="/experience"
-        className="inline-flex items-center gap-2 text-sm text-black transition-[font-size,color] duration-300 ease-in-out hover:text-xl"
+        className="group inline-flex items-center gap-2 text-base text-neutral-500 transition-colors duration-300 hover:text-black"
       >
-        <Image src="/icons/Property 1=LEFT-UP.svg" alt="arrow" width={20} height={20}/>
-        Back to experience
+        <Image
+          src="/icons/Property 1=LEFT-UP.svg"
+          alt="arrow"
+          width={20}
+          height={20}
+          className="transition-transform duration-300 group-hover:-translate-x-1"
+        />
+        Back to cases
       </Link>
 
       <header className="mt-6 border-b border-neutral-800 pb-6">
