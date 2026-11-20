@@ -59,7 +59,7 @@ export const cases: DesignCase[] = [
       name: "Modern & Minimal",
       description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
       image: {
-        src: "/images/email-c1.png",
+        src: "/images/email-c1.webp",
         alt: "Brand color palette"
       }
     },
@@ -68,7 +68,7 @@ export const cases: DesignCase[] = [
       name: "Golos Text",
       description: "It is a modern sans-serif typeface with clean geometric forms and balanced proportions, combining excellent readability with a confident, contemporary, and technological feel.",
       image: {
-        src: "/images/email-tp.png",
+        src: "/images/email-tp.webp",
         alt: "Brand typodraphy"
       }
     },
