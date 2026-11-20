@@ -35,7 +35,7 @@ export default function CaseCard({ project }: CaseProps) {
 
         <div className="col-start-2 row-start-1 flex justify-end md:col-auto md:row-auto">
           <Image
-            src="/icons/Property 1=RIGHT-UP.svg"
+            src="/icons/RIGHT-UP.svg"
             alt="View project"
             width={75}
             height={75}

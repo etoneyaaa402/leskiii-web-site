@@ -26,6 +26,12 @@ export type DesignCase = {
     image: DesignImage;
   };
 
+  icons: {
+    name: string;
+    description: string;
+    image: DesignImage;
+  };
+
   typography: {
     name: string;
     description: string;
@@ -56,6 +62,15 @@ export const cases: DesignCase[] = [
     },
 
     colorPalette: {
+      name: "Modern & Minimal",
+      description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
+      image: {
+        src: "/images/email-c1.webp",
+        alt: "Brand color palette"
+      }
+    },
+
+    icons: {
       name: "Modern & Minimal",
       description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
       image: {
@@ -119,6 +134,15 @@ export const cases: DesignCase[] = [
       }
     },
 
+    icons: {
+      name: "Modern & Minimal",
+      description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
+      image: {
+        src: "/images/email-c1.webp",
+        alt: "Brand color palette"
+      }
+    },
+
     typography: {
       name: "Manrope",
       description: "A geometric sans-serif typeface with a contemporary appearance.",
@@ -166,6 +190,15 @@ export const cases: DesignCase[] = [
       description: "Expressive colors and contrasting shades that attract attention.",
       image: {
         src: "/images/email-cp.png",
+        alt: "Brand color palette"
+      }
+    },
+
+    icons: {
+      name: "Modern & Minimal",
+      description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
+      image: {
+        src: "/images/email-c1.webp",
         alt: "Brand color palette"
       }
     },

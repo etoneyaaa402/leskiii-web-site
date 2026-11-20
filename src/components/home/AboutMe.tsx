@@ -1,6 +1,6 @@
 export default function AboutMe() {
   const data = {
-    education: "BSTU, ISIT, 2022/2026",
+    education: "Belarussian State Technological University, ISIT, 2022/2026",
     languages: [
       { lang: "Russian - native" },
       { lang: "English - B2" },
