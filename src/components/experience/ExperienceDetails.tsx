@@ -18,7 +18,7 @@ export default function ExperienceDetails({
         className="group inline-flex items-center gap-2 text-base text-neutral-500 transition-colors duration-300 hover:text-black"
       >
         <Image
-          src="/icons/Property 1=LEFT-UP.svg"
+          src="/icons/LEFT-UP.svg"
           alt="arrow"
           width={20}
           height={20}

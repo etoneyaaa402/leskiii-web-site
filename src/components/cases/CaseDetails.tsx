@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { DesignCase } from "@/data/cases";
+import HorizontalScroll from "@/components/blocks/HorizontalScroll";
 
 type CaseDetailsProps = {
   project: DesignCase;
@@ -14,7 +15,7 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
         className="group inline-flex items-center gap-2 text-base text-neutral-500 transition-colors duration-300 hover:text-black"
       >
         <Image
-          src="/icons/Property 1=LEFT-UP.svg"
+          src="/icons/LEFT-UP.svg"
           alt="arrow"
           width={20}
           height={20}
@@ -85,48 +86,83 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
       </section>
 
       <section className="mb-24">
-        <h2 className="md:mb-10 mb-8 text-3xl font-medium md:text-4xl">
+        <h2 className="text-3xl font-medium md:text-4xl">
           Visual direction
         </h2>
-
-        <div className="grid grid-cols-1 md:gap-12 gap-10 md:grid-cols-2">
-          <div className="overflow-hidden rounded-b-xl">
-            <p className="md:mb-6 mb-4 text-sm text-neutral-500">
-              Color palette
-            </p>
-
-            <h3 className="mb-2 text-2xl font-medium">
-              {project.colorPalette.name}
-            </h3>
-
-            <p className="leading-relaxed text-neutral-600">
-              {project.colorPalette.description}
-            </p>
-            <Image src={project.colorPalette.image.src} alt={project.colorPalette.image.alt}
-              width={1600}
-              height={1200}
-              className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02]"/>
-          </div>
-
-          <div className="overflow-hidden rounded-b-xl">
-            <p className="md:mb-6 mb-4 text-sm text-neutral-500">
-              Typography
-            </p>
-
-            <h3 className="mb-2 text-2xl font-medium">
-              {project.typography.name}
-            </h3>
-
-            <p className="leading-relaxed text-neutral-600">
-              {project.typography.description}
-            </p>
-            <Image src={project.typography.image.src} alt={project.typography.image.alt}
-              width={1600}
-              height={1200}
-              className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02]"/>
-          </div>
-
-        </div>
+        <HorizontalScroll>
+          
+        
+            {/* Color palette */}
+            <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
+              <p className="md:mb-6 mb-4 text-sm text-neutral-500">
+                Color palette
+              </p>
+        
+              <h3 className="mb-2 text-2xl font-medium">
+                {project.colorPalette.name}
+              </h3>
+        
+              <p className="leading-relaxed text-neutral-600">
+                {project.colorPalette.description}
+              </p>
+        
+              <Image
+                src={project.colorPalette.image.src}
+                alt={project.colorPalette.image.alt}
+                width={1600}
+                height={1200}
+                className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
+              />
+            </div>
+        
+            {/* Typography */}
+            <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
+              <p className="md:mb-6 mb-4 text-sm text-neutral-500">
+                Typography
+              </p>
+        
+              <h3 className="mb-2 text-2xl font-medium">
+                {project.typography.name}
+              </h3>
+        
+              <p className="leading-relaxed text-neutral-600">
+                {project.typography.description}
+              </p>
+        
+              <Image
+                src={project.typography.image.src}
+                alt={project.typography.image.alt}
+                width={1600}
+                height={1200}
+                className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
+              />
+            </div>
+        
+            {/*Icons*/}
+            <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
+              <p className="md:mb-6 mb-4 text-sm text-neutral-500">
+                Typography
+              </p>
+        
+              <h3 className="mb-2 text-2xl font-medium">
+                {project.icons.name}
+              </h3>
+        
+              <p className="leading-relaxed text-neutral-600">
+                {project.icons.description}
+              </p>
+        
+              <Image
+                src={project.icons.image.src}
+                alt={project.icons.image.alt}
+                width={1600}
+                height={1200}
+                className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
+              />
+            </div>
+        </HorizontalScroll>
+        
+        
       </section>
 
       <section className="md:mb-20 mb-10">

@@ -20,10 +20,10 @@ export default function HeroPage() {
               **+375(33)377-73-32
             </CopyableText>
           </p>
-          <p><a href="#">**tg   __     @lesskiii</a></p>
+          <p><a href="https://t.me/lesskiii">**tg   __     @lesskiii</a></p>
           <div className="flex flex-row justify-between p-0 mt-2">
-            <p><a href="#" className="hover:text-blue-500 hover:underline">GitHub</a></p>
-            <p><a href="#" className="hover:text-blue-500 hover:underline">LinkeIn</a></p>
+            <p><a href="https://github.com/etoneyaaa402" className="hover:text-blue-500 hover:underline">GitHub</a></p>
+            <p><a href="#" className="hover:text-blue-500 hover:underline">LinkedIn</a></p>
           </div>
         </div>
       </div>
