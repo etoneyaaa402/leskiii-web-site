@@ -25,7 +25,7 @@ export default function ToTop() {
   };
   
   return (
-    <div className={`fixed bottom-4 right-4 cursor-pointer z-50 flex bg-black w-10 h-10 md:w-15 md:h-15 justify-center items-center transition-all duration-500 ease-in-out hover:scale-110 hover:bg-gray-800 ${
+    <div className={`fixed bottom-4 right-4 cursor-pointer z-50 flex bg-black w-10 h-10 md:w-12 md:h-12 justify-center items-center transition-all duration-500 ease-in-out hover:scale-110 hover:bg-gray-800 ${
         isVisible
           ? "opacity-100 scale-100"
           : "opacity-0 scale-75 pointer-events-none"
