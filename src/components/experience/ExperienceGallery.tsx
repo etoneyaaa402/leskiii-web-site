@@ -18,6 +18,7 @@ export default function ExperienceGallery() {
             <Link
               href={`/experience/${exp.id}`}
               key={exp.id}
+              prefetch={false}
               onMouseEnter={() => setActiveId(exp.id)}
               className={`
                         min-w-0 rounded-xl

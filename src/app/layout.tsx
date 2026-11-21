@@ -16,8 +16,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "leskiii portfolio",
-  description: "my page for getting a job",
+  title: "Leskiii — Portfolio",
+  description:
+    "Frontend developer and web designer. Selected projects and experience.",
+
+  openGraph: {
+    title: "Leskiii — Portfolio",
+    description:
+      "Frontend developer and web designer. Selected projects and experience.",
+    type: "website",
+    siteName: "Leskiii Portfolio",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Leskiii — Portfolio",
+    description:
+      "Frontend developer and web designer. Selected projects and experience.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -28,7 +44,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <NavMenu />
-        {children}
+        <main className="pt-16">
+          {children}
+        </main>
         <ToTop />
         <Footer />
       </body>

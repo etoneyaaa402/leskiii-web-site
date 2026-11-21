@@ -8,7 +8,7 @@ export default function CaseGallery() {
   const [activeSlug, setActiveSlug] = useState<string | null>(null);
   return (
     <section
-      className="my-6"
+      className="my-6 overflow-clip"
       onMouseLeave={() => setActiveSlug(null)}
     >
       {cases.map((project) => {

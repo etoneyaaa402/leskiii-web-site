@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import CaseContent from "./CaseContent";
+import Loading from "@/app/loading";
 
 type CasePageProps = {
   params: Promise<{
@@ -9,7 +10,7 @@ type CasePageProps = {
 
 export default function CasePage({ params }: CasePageProps) {
   return (
-    <Suspense fallback={<p>Loading case...</p>}>
+    <Suspense fallback={<Loading/ >}>
       <CaseContent params={params} />
     </Suspense>
   );

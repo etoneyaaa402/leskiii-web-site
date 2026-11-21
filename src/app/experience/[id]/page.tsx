@@ -1,6 +1,8 @@
+
 import { Suspense } from "react";
 import ExperienceContent from "./ExperienceContent";
-import { experience } from "@/data/experience";
+import Loading from "@/app/loading";
+
 
 type ExpPageProps = {
   params: Promise<{
@@ -8,19 +10,9 @@ type ExpPageProps = {
   }>;
 };
 
-export function generateStaticParams() {
-  const params = experience.map((item) => ({
-    id: item.id,
-  }));
-
-  console.log("Generated experience routes:", params);
-
-  return params;
-}
-
 export default function ExpPage({ params }: ExpPageProps) {
   return (
-    <Suspense fallback={<p>Loading page...</p>}>
+    <Suspense fallback={<Loading />}>
       <ExperienceContent params={params} />
     </Suspense>
   );
