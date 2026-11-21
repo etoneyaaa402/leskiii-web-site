@@ -13,7 +13,7 @@ export default function NavMenuContent() {
   const pathname = usePathname();
 
   return (
-    <nav>
+    <nav className="fixed top-0 left-0 z-50 w-full bg-white/90 ">
       <ul className="flex flex-row gap-6 justify-center m-6">
         {navLinks.map((link) => {
           const isActive =
@@ -36,7 +36,7 @@ export default function NavMenuContent() {
                   ${
                     isActive
                       ? "text-black after:scale-x-100"
-                      : "text-neutral-500 after:scale-x-0 hover:text-black hover:after:scale-x-100"
+                      : "text-neutral-600 after:scale-x-0 hover:text-black hover:after:scale-x-100"
                   }
                 `}
               >
