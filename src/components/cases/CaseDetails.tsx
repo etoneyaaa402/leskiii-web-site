@@ -10,6 +10,7 @@ type CaseDetailsProps = {
 export default function CaseDetails({ project }: CaseDetailsProps) {
   return (
     <main className="mx-auto max-w-6xl px-6 py-10 md:px-12">
+
       <Link
         href="/cases"
         className="group inline-flex items-center gap-2 text-base text-neutral-500 transition-colors duration-300 hover:text-black"
@@ -90,45 +91,45 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
           Visual direction
         </h2>
         <HorizontalScroll>
-          
-        
+
+
             {/* Color palette */}
             <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
               <p className="md:mb-6 mb-4 text-sm text-neutral-500">
                 Color palette
               </p>
-        
+
               <h3 className="mb-2 text-2xl font-medium">
                 {project.colorPalette.name}
               </h3>
-        
+
               <p className="leading-relaxed text-neutral-600">
                 {project.colorPalette.description}
-              </p>
-        
-              <Image
-                src={project.colorPalette.image.src}
-                alt={project.colorPalette.image.alt}
-                width={1600}
-                height={1200}
-                className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
-              />
+            </p>
+
+            <Image
+              src={project.colorPalette.image.src}
+              alt={project.colorPalette.image.alt}
+              width={1600}
+              height={1200}
+              className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
+            />
             </div>
-        
+
             {/* Typography */}
             <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
               <p className="md:mb-6 mb-4 text-sm text-neutral-500">
                 Typography
               </p>
-        
+
               <h3 className="mb-2 text-2xl font-medium">
                 {project.typography.name}
               </h3>
-        
+
               <p className="leading-relaxed text-neutral-600">
                 {project.typography.description}
               </p>
-        
+
               <Image
                 src={project.typography.image.src}
                 alt={project.typography.image.alt}
@@ -137,42 +138,70 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
                 className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
               />
             </div>
-        
+
             {/*Icons*/}
             <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
               <p className="md:mb-6 mb-4 text-sm text-neutral-500">
-                Typography
+                Icons
               </p>
-        
+
               <h3 className="mb-2 text-2xl font-medium">
                 {project.icons.name}
               </h3>
-        
+
               <p className="leading-relaxed text-neutral-600">
                 {project.icons.description}
               </p>
-        
+
               <Image
                 src={project.icons.image.src}
                 alt={project.icons.image.alt}
-                width={1600}
-                height={1200}
+                width={1500}
+                height={850}
                 className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
               />
-            </div>
+          </div>
+
+          {project.logo && typeof project.logo === 'object' && (
+            <div className="min-w-[85%] md:min-w-[calc(50%-20px)] snap-start">
+              <p className="md:mb-6 mb-4 text-sm text-neutral-500">
+                Logo
+              </p>
+
+              <h3 className="mb-2 text-2xl font-medium">
+                {project.logo.name}
+              </h3>
+
+              <p className="leading-relaxed text-neutral-600">
+                {project.logo.description}
+              </p>
+
+              <Image
+                src={project.logo.image.src}
+                alt={project.logo.image.alt}
+                width={1500}
+                height={850}
+                className="mt-1.5 h-auto w-full transition-transform duration-500 hover:scale-[1.02] rounded-b-2xl"
+              />
+          </div>
+          )}
         </HorizontalScroll>
-        
-        
+
+
       </section>
 
       <section className="md:mb-20 mb-10">
         <h2 className="mb-10 text-3xl font-medium md:text-4xl">
           Final designs
         </h2>
-      
+
+        <p className="leading-relaxed text-neutral-600 mb-5">
+          {project.result}
+        </p>
+        
         <div className="
           flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide
-          pb-4 
+          pb-4
           md:grid md:grid-cols-2 md:gap-6 md:overflow-visible
         ">
           {project.images.map((image, index) => (
@@ -184,14 +213,15 @@ export default function CaseDetails({ project }: CaseDetailsProps) {
                 md:w-full
               "
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={1600}
-                height={1200}
-                className="h-auto w-full transition-transform duration-500 hover:scale-[1.02]"
-              />
-      
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-t-lg">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={1600}
+                  height={1200}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"
+                />
+              </div>
               <figcaption className="mt-3 text-sm text-neutral-500">
                 {String(index + 1).padStart(2, "0")}
               </figcaption>
