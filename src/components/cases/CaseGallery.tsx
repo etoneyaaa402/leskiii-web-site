@@ -14,13 +14,14 @@ export default function CaseGallery() {
       {cases.map((project) => {
         const isActive = activeSlug === project.slug;
         const hasActive = activeSlug !== null;
-    
+
         return (
           <div key={project.slug} className="relative">
             <div className="absolute left-1/2 top-0 w-screen -translate-x-1/2 border-t md:border-t-2 border-black" />
-    
+
             <Link
               href={`/cases/${project.slug}`}
+              prefetch={false}
               onMouseEnter={() => setActiveSlug(project.slug)}
               className={`
                 block min-w-0 origin-center

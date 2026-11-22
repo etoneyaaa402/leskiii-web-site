@@ -18,7 +18,7 @@ export default function CaseCard({ project }: CaseProps) {
             {project.title}
           </h2>
 
-          <p className="text-sm leading-relaxed text-neutral-600 md:mt-0 md:text-base">
+          <p className="text-sm leading-relaxed text-neutral-600 md:mt-0 md:text-base line-clamp-2">
             {project.description}
           </p>
         </div>
