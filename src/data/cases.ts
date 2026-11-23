@@ -171,10 +171,10 @@ export const cases: DesignCase[] = [
         "The completed commercial product brings resume analysis, interview evaluation, and candidate scoring together in a centralized interface. Integrated into a real recruitment workflow, the system processes candidate data and generates comprehensive evaluation reports in approximately 30–60 seconds. By combining AI-powered insights, consistency checks, and structured reporting, it helps hiring teams reduce manual screening efforts and make more informed decisions. The responsive interface also provides convenient access to candidate data and evaluation results across desktop and mobile devices.",
     
       images: [
-        { src: "/images/iMac_on_Table_Mockup_3.png", alt: "AI Candidate Evaluation Dashboard" },
-        { src: "/images/iPhone_Mockup_1.png", alt: "Candidate Analysis and AI-Generated Insights" },
-        { src: "/images/SmartPhone_on_the_Ground.png", alt: "Mobile User Settings" },
-        { src: "/images/MacBook_Mockup_3.png", alt: "Mobile Candidate List" }
+        { src: "/images/iMac_on_Table_Mockup_3 1.png", alt: "AI Candidate Evaluation Dashboard" },
+        { src: "/images/iPhone_Mockup_3 1.png", alt: "Candidate Analysis and AI-Generated Insights" },
+        { src: "/images/Smartphone_on_the_Ground 1.png", alt: "Mobile User Settings" },
+        { src: "/images/MacBook_Mockup_2 1.png", alt: "Mobile Candidate List" }
       ],
   },
 
