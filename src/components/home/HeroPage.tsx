@@ -8,6 +8,7 @@ export default function HeroPage() {
         <p className="text-5xl leading-none tracking-tight md:text-7xl lg:text-9xl">volgina <br /> olesya</p>
         <img src="/images/me-2.webp" alt="avatar-photo" className="w-100 h-auto"/>
         <div className="text-1xl md:text-2xl lg:text-4xl">
+          <p>FullStack Dev + Web-designer</p>
           <p>**21 y.o.    __   04/02/2005</p>
           <p>**Minsk    --    Belarus</p>
           <p>
