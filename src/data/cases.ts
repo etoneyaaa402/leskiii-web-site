@@ -178,127 +178,127 @@ export const cases: DesignCase[] = [
       ],
   },
 
-  {
-    slug: "social-media",
-    title: "Social Media Design",
-    category: "Digital Design",
-    description: "Visual content for social media.",
-    cover: "/images/cool.jpg",
-
-    goal: {
-      name: "Increase audience engagement",
-      description: "Develop a recognizable visual system for social media content."
-    },
-
-    users: {
-      name: "Social media audience",
-      description: "Users who interact with the brand through social media platforms."
-    },
-
-    colorPalette: {
-      name: "Bold & Expressive",
-      description: "Bright accent colors combined with darker backgrounds to create contrast.",
-      image: {
-        src: "/images/email-cp.png",
-        alt: "Brand color palette"
-      }
-    },
-
-    icons: {
-      name: "Modern & Minimal",
-      description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
-      image: {
-        src: "/images/email-c1.webp",
-        alt: "Brand color palette"
-      }
-    },
-
-    typography: {
-      name: "Manrope",
-      description: "A geometric sans-serif typeface with a contemporary appearance.",
-      image: {
-        src: "/images/email-tp.png",
-        alt: "Brand typodraphy"
-      }
-    },
-
-    result: "The email campaign successfully utilized responsive design to deliver the Academy 1C content seamlessly across mobile and desktop platforms, ensuring high readability. This strategic approach resulted in effective audience engagement and drove conversions by making the training materials easily accessible on any device.",
-
-    images: [
-      {
-        src: "/images/social-1.jpg",
-        alt: "Social media post design"
-      },
-      {
-        src: "/images/social-2.jpg",
-        alt: "Social media stories"
-      },
-      {
-        src: "/images/social-3.jpg",
-        alt: "Social media content"
-      }
-    ]
-  },
-
-  {
-    slug: "campaign",
-    title: "Advertising Campaign",
-    category: "Advertising",
-    description: "A visual concept for an advertising campaign.",
-    cover: "/images/monkey.jpg",
-
-    goal: {
-      name: "Promote a new product",
-      description: "Create an engaging advertising concept that attracts potential customers."
-    },
-
-    users: {
-      name: "Potential customers",
-      description: "People interested in discovering new products and solutions."
-    },
-
-    colorPalette: {
-      name: "Dynamic & Contrast",
-      description: "Expressive colors and contrasting shades that attract attention.",
-      image: {
-        src: "/images/email-cp.png",
-        alt: "Brand color palette"
-      }
-    },
-
-    icons: {
-      name: "Modern & Minimal",
-      description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
-      image: {
-        src: "/images/email-c1.webp",
-        alt: "Brand color palette"
-      }
-    },
-
-    typography: {
-      name: "Montserrat",
-      description: "A geometric sans-serif typeface with distinctive headlines.",
-      image: {
-        src: "/images/email-tp.png",
-        alt: "Brand typodraphy"
-      }
-    },
-
-    result: "The email campaign successfully utilized responsive design to deliver the Academy 1C content seamlessly across mobile and desktop platforms, ensuring high readability. This strategic approach resulted in effective audience engagement and drove conversions by making the training materials easily accessible on any device.",
-
-    images: [
-      {
-        src: "/images/campaign-1.jpg",
-        alt: "Advertising campaign concept"
-      },
-      {
-        src: "/images/campaign-2.jpg",
-        alt: "Advertising poster"
-      },
-      {
-        src: "/images/campaign-3.jpg",
-        alt: "Advertising campaign materials"
-      }
-    ]
-  }
+//   {
+//     slug: "social-media",
+//     title: "Social Media Design",
+//     category: "Digital Design",
+//     description: "Visual content for social media.",
+//     cover: "/images/cool.jpg",
+// 
+//     goal: {
+//       name: "Increase audience engagement",
+//       description: "Develop a recognizable visual system for social media content."
+//     },
+// 
+//     users: {
+//       name: "Social media audience",
+//       description: "Users who interact with the brand through social media platforms."
+//     },
+// 
+//     colorPalette: {
+//       name: "Bold & Expressive",
+//       description: "Bright accent colors combined with darker backgrounds to create contrast.",
+//       image: {
+//         src: "/images/email-cp.png",
+//         alt: "Brand color palette"
+//       }
+//     },
+// 
+//     icons: {
+//       name: "Modern & Minimal",
+//       description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
+//       image: {
+//         src: "/images/email-c1.webp",
+//         alt: "Brand color palette"
+//       }
+//     },
+// 
+//     typography: {
+//       name: "Manrope",
+//       description: "A geometric sans-serif typeface with a contemporary appearance.",
+//       image: {
+//         src: "/images/email-tp.png",
+//         alt: "Brand typodraphy"
+//       }
+//     },
+// 
+//     result: "The email campaign successfully utilized responsive design to deliver the Academy 1C content seamlessly across mobile and desktop platforms, ensuring high readability. This strategic approach resulted in effective audience engagement and drove conversions by making the training materials easily accessible on any device.",
+// 
+//     images: [
+//       {
+//         src: "/images/social-1.jpg",
+//         alt: "Social media post design"
+//       },
+//       {
+//         src: "/images/social-2.jpg",
+//         alt: "Social media stories"
+//       },
+//       {
+//         src: "/images/social-3.jpg",
+//         alt: "Social media content"
+//       }
+//     ]
+//   },
+// 
+//   {
+//     slug: "campaign",
+//     title: "Advertising Campaign",
+//     category: "Advertising",
+//     description: "A visual concept for an advertising campaign.",
+//     cover: "/images/monkey.jpg",
+// 
+//     goal: {
+//       name: "Promote a new product",
+//       description: "Create an engaging advertising concept that attracts potential customers."
+//     },
+// 
+//     users: {
+//       name: "Potential customers",
+//       description: "People interested in discovering new products and solutions."
+//     },
+// 
+//     colorPalette: {
+//       name: "Dynamic & Contrast",
+//       description: "Expressive colors and contrasting shades that attract attention.",
+//       image: {
+//         src: "/images/email-cp.png",
+//         alt: "Brand color palette"
+//       }
+//     },
+// 
+//     icons: {
+//       name: "Modern & Minimal",
+//       description: "A balanced mix of deep blue and green, warm neutrals, and coral accents creates a modern, professional, and welcoming educational identity.",
+//       image: {
+//         src: "/images/email-c1.webp",
+//         alt: "Brand color palette"
+//       }
+//     },
+// 
+//     typography: {
+//       name: "Montserrat",
+//       description: "A geometric sans-serif typeface with distinctive headlines.",
+//       image: {
+//         src: "/images/email-tp.png",
+//         alt: "Brand typodraphy"
+//       }
+//     },
+// 
+//     result: "The email campaign successfully utilized responsive design to deliver the Academy 1C content seamlessly across mobile and desktop platforms, ensuring high readability. This strategic approach resulted in effective audience engagement and drove conversions by making the training materials easily accessible on any device.",
+// 
+//     images: [
+//       {
+//         src: "/images/campaign-1.jpg",
+//         alt: "Advertising campaign concept"
+//       },
+//       {
+//         src: "/images/campaign-2.jpg",
+//         alt: "Advertising poster"
+//       },
+//       {
+//         src: "/images/campaign-3.jpg",
+//         alt: "Advertising campaign materials"
+//       }
+//     ]
+//   }
 ];
